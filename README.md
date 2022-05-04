@@ -28,6 +28,7 @@ Here are some general steps to make an input:
 
 Reference the AVR datasheet section 14 about I/O ports.  Note below the hardware for one I/O pin in the AVR.  
 ![Picture2](https://user-images.githubusercontent.com/102126445/166611756-21192677-3de8-44b6-bbd2-0382e94cf992.png)
+
 Internal hardware for an I/O pin in the AVR
 
 All this hardware is required to be able to configure the pin as an input or an output, plus some other features like internal pullup resistors, sleep modes and synchronization with the clock.  Clearly, I/O pins are not simple but we will only be concerned for this lab with a simple input or output. For this we need the DDR register and the Port for the input or output that we will be using.
