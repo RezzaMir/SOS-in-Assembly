@@ -2,7 +2,8 @@
 
 Purpose:	The Purpose of this project is use Assembly programs which will be embedded into the Arduino C environment but also to be introduced to doing an input and an output from the Arduino board.  The input will be a switch to start the program with a pull-up or pull-down resistor and the output will drive an LED blinking an SOS in Morse Code.  It looks like it will be complicated, but you are given clues every step of the way. And you can use the previous lab delay function and R16 for the different delay times.
 
-Background: In the time of the telegram and radio telegraphy, before and even after voice was encoded, the means of communication was with a ‘tapper’ or a fancy looking switch, using Morse Code, whereby the sender could tap out a message using long and short durations or ‘taps’.   On the receiving end would be a relay or a tone which would repeat the taps so one could hear it and translate it back into words.  In Morse code, the letter S is encoded with 3 short dots or durations and the O is encoded with three long dashes or durations.  The Morse code for mayday or help is SOS which looks like …---…  …---… and so on.  
+# Background
+In the time of the telegram and radio telegraphy, before and even after voice was encoded, the means of communication was with a ‘tapper’ or a fancy looking switch, using Morse Code, whereby the sender could tap out a message using long and short durations or ‘taps’.   On the receiving end would be a relay or a tone which would repeat the taps so one could hear it and translate it back into words.  In Morse code, the letter S is encoded with 3 short dots or durations and the O is encoded with three long dashes or durations.  The Morse code for mayday or help is SOS which looks like …---…  …---… and so on.  
 
 This lab will send SOS in Morse code to an LED when a switch is on and it will stop after sending the complete SOS when the switch is off.
 
@@ -38,6 +39,7 @@ Previously we saw how outputs were configured for the LED on PORTB bit 5 to blin
 
 You can select any port pin that is available for this on your Arduino but then you must determine its port and bit.  
 
+# Input and Output (I/O)
 Output:
 PORTB, register 5, bit 5, is used internally for the LED and is also brought out to a connector (pin 13 on the UNO) but do not use it externally-it does not have enough current capability to drive two LEDs.  
 •	Suggestion: Use PORTB, register 5 bit 4 (pin 12 on the UNO) for the output
