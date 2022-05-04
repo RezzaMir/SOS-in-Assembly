@@ -51,3 +51,6 @@ There are many other choices you can use (except do not use I/O pins 0 or 1 as t
 Typical setup: You choose the pins for the input and output.
 
 ![Screenshot 2022-05-03 183318](https://user-images.githubusercontent.com/102126445/166612255-bc4fb495-f873-4c83-946d-2dd4d4bfa497.png)
+
+Reading an input:
+To read an input knowing the port, you would use the IN instruction shown below and the pins address for the port that you are using.  For instance, to read the PORTB, bit 4 (pin 18 of UNO) you would use this instruction to read the port.
