@@ -47,6 +47,7 @@ There are many other choices you can use (except do not use I/O pins 0 or 1 as t
 •	Suggestion: PORTB, register 5 bit 3 (pin 11 on the UNO) can be used as an input.
 
 ![Picture3](https://user-images.githubusercontent.com/102126445/166611875-3ced6d4c-71ec-4656-a313-7e534eb0b007.png)
+
 Typical setup: You choose the pins for the input and output.
 
 ![Screenshot 2022-05-03 183318](https://user-images.githubusercontent.com/102126445/166612255-bc4fb495-f873-4c83-946d-2dd4d4bfa497.png)
