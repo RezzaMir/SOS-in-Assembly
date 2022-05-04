@@ -10,3 +10,19 @@ This lab will send SOS in Morse code to an LED when a switch is on and it will s
 
 Here is an example of what it should sound like:
 https://www.youtube.com/watch?v=Zsb7stKelq4
+
+Creating an input for a switch.
+Such a seemingly simple operation requires some thought when doing it on a microprocessor.  
+1.	You have to select the pin which relates to a PORTx, and a bitx, 
+2.	set it up to be an input, 
+3.	then read that pin in the program and process it as a value depending on what bit it is on 
+4.	then decide what you want to do afterwards based on its value
+
+Here are some general steps to make an input:
+1.	Determine or select the input pin you will use.   Do not use I/O pins 0 or 1.
+2.	Find the DDR register associated with it
+3.	Using CBI to clear the DDR register bit for the associated PORT pin to an input.
+4.	The PORT pin is now configured and ready to be used by your program.
+5.	Read the input and make a decision.
+
+Reference the AVR datasheet section 14 about I/O ports.  Note below the hardware for one I/O pin in the AVR.  
