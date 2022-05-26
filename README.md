@@ -83,3 +83,9 @@ BREQ   start;     //if the switch is not closed (i.e. 0) then go back and loop
 # Creating an output.
 Creating an output is very similar to creating an input.  You have to set the port pin to be an output.  Then you can use the CBI or SBI to make it a zero or a one.
 
+Here are some general steps to make an output:
+1.	Determine or select the output pin you will use.  Do not use I/O pins 0 or 1 which are reserved for TX and RX.
+2.	Find the DDR register associated with it.
+3.	Using SBI to set the DDR register bit for the associated PORT pin to an output.
+4.	The PORT pin is now configured and ready to be used by your program.
+5.	Use CBI or SBI to control the output port pin connected to your LED.
