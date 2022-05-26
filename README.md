@@ -94,8 +94,16 @@ Designing the program
 This lab is very similar to the previous lab for the blinking LED.  That sketch is attached as a base for you to start with.  You just have to change the structure to create the SOS per the rules above and use an input for the switch to run the SOS and an output to drive the LED.  Use the delay subroutine to setup different delays for the dots, dashes, etc. as shown below in the box.
 
 # Materials:
-- 1 - Arduino Uno, Nano or Robotics Board | /re/
-- 1 – Push button switch |
-- 1 - LED |
-- 1 – 220 ohm Resistor for LED |
+- 1 - Arduino Uno, Nano or Robotics Board
+- 1 – Push button switch
+- 1 - LED 
+- 1 – 220 ohm Resistor for LED
 - 1 – 10k resistor pullup or pulldown for Switch
+
+#Equipment:
+- Power supply set to 5V (or use Arduino voltage output)
+- Oscilloscope to read your SOS pulse timing
+- DMM to check voltages
+
+
+
