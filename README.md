@@ -110,6 +110,9 @@ See the document defining the timing relationships and follow these rules when d
 
 ![21](https://user-images.githubusercontent.com/102126445/170413192-e05e2979-4f06-44c3-a781-5fc6f94a271d.png)
 
+# Program operation:  
+1)	When the switch is held the LED will blink SOS SOS SOS etc. until the switch is released.  The switch can be a jumper wire since we do not have any switches besides DIP switches.  
+2)	There will be a register assigned for each of the timing values for dot, dash, pause between elements, pause between characters, and pause between words (treat SOS as a word).  The registers that you setup will be moved to R16 before you call the subroutine.  Equate the registers with names for the delay they create.
 
 
 
