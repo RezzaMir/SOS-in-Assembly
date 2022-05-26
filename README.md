@@ -75,7 +75,9 @@ If using a pull-down resistor the switch closure will result in a 1 otherwise it
 ANDI    r17, 0x08;     //AND r16 with 08h
 
 BREQ   start;     //if the switch is not closed (i.e. 0) then go back and loop
-![Picture1](https://user-images.githubusercontent.com/102126445/170408887-74f78920-f25d-40aa-b4a2-eda4b08ea7ba.png)
-![Picture3](https://user-images.githubusercontent.com/102126445/170408891-ff88f134-2a2c-4322-85e1-5dea6b9d1be5.png)
-![Picture4](https://user-images.githubusercontent.com/102126445/170408892-9d04452e-4c43-4ea7-addd-c3270b024a12.png)
+
+![111](https://user-images.githubusercontent.com/102126445/170409460-ddb7ceb9-c406-48a1-baf9-7a44fd436dfc.png)
+![222](https://user-images.githubusercontent.com/102126445/170409462-38daa07d-05ba-40de-8558-eff2ba177da0.png)
+![333](https://user-images.githubusercontent.com/102126445/170409464-c54bde33-1e0b-4e1e-a812-5b5ab819f61a.png)
+
 
