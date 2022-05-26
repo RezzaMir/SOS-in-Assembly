@@ -80,4 +80,6 @@ BREQ   start;     //if the switch is not closed (i.e. 0) then go back and loop
 ![222](https://user-images.githubusercontent.com/102126445/170409462-38daa07d-05ba-40de-8558-eff2ba177da0.png)
 ![333](https://user-images.githubusercontent.com/102126445/170409464-c54bde33-1e0b-4e1e-a812-5b5ab819f61a.png)
 
+# Creating an output.
+Creating an output is very similar to creating an input.  You have to set the port pin to be an output.  Then you can use the CBI or SBI to make it a zero or a one.
 
