@@ -100,10 +100,16 @@ This lab is very similar to the previous lab for the blinking LED.  That sketch 
 - 1 – 220 ohm Resistor for LED
 - 1 – 10k resistor pullup or pulldown for Switch
 
-#Equipment:
+# Equipment:
 - Power supply set to 5V (or use Arduino voltage output)
 - Oscilloscope to read your SOS pulse timing
 - DMM to check voltages
+
+# Morse code specs
+See the document defining the timing relationships and follow these rules when designing your program for the SOS Morse Code.
+
+![21](https://user-images.githubusercontent.com/102126445/170413192-e05e2979-4f06-44c3-a781-5fc6f94a271d.png)
+
 
 
 
