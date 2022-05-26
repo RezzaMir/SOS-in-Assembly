@@ -59,6 +59,7 @@ Reading an input:
 To read an input knowing the port, you would use the IN instruction shown below and the pins address for the port that you are using.  For instance, to read the PORTB, bit 4 (pin 18 of UNO) you would use this instruction to read the port.
 
 Loop:
+
 IN r17, 0x03;    //read PORTB pins into register 17		
 
 Now you need to pick out bit 4 by ANDing it with 0x10 to mask out all the other bits.  After this it depends on your input configuration and whether you are using a pull-up or a pull-down.  Here we are using a pulldown resistor.
@@ -66,4 +67,11 @@ Now you need to pick out bit 4 by ANDing it with 0x10 to mask out all the other 
 If you are using a Pull-up resistor, the switch closure will result in a 0 otherwise it is a 1, so you can do the AND instruction and then branch if it is zero.
 
 ANDI    r17, 0x08;     //AND r17 with 08h
+
 BRNE   start;     //if the switch is not closed (i.e. 1) then go back and loop
+
+If using a pull-down resistor the switch closure will result in a 1 otherwise it is a 0:
+
+ANDI    r17, 0x08;     //AND r16 with 08h
+
+BREQ   start;     //if the switch is not closed (i.e. 0) then go back and loop
