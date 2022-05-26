@@ -57,3 +57,8 @@ Typical setup: You choose the pins for the input and output.
 
 Reading an input:
 To read an input knowing the port, you would use the IN instruction shown below and the pins address for the port that you are using.  For instance, to read the PORTB, bit 4 (pin 18 of UNO) you would use this instruction to read the port.
+
+Loop:
+IN r17, 0x03;    //read PORTB pins into register 17		
+
+Now you need to pick out bit 4 by ANDing it with 0x10 to mask out all the other bits.  After this it depends on your input configuration and whether you are using a pull-up or a pull-down.  Here we are using a pulldown resistor.
