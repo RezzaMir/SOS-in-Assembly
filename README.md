@@ -89,3 +89,13 @@ Here are some general steps to make an output:
 3.	Using SBI to set the DDR register bit for the associated PORT pin to an output.
 4.	The PORT pin is now configured and ready to be used by your program.
 5.	Use CBI or SBI to control the output port pin connected to your LED.
+
+Designing the program
+This lab is very similar to the previous lab for the blinking LED.  That sketch is attached as a base for you to start with.  You just have to change the structure to create the SOS per the rules above and use an input for the switch to run the SOS and an output to drive the LED.  Use the delay subroutine to setup different delays for the dots, dashes, etc. as shown below in the box.
+
+Materials:
+1 - Arduino Uno, Nano or Robotics Board
+1 – Push button switch
+1 - LED
+1 – 220 ohm Resistor for LED
+1 – 10k resistor pullup or pulldown for Switch
